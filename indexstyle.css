@@ -1,0 +1,315 @@
+.navbar-gradient {
+    background: linear-gradient(90deg, #0f2027 0%, #2c5364 50%, #00c6ff 100%);
+    box-shadow: 0 2px 8px rgba(44,83,100,0.08);
+    color: #fff;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.5rem 2rem;
+}
+
+.navbar-logo .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: color 0.2s, transform 0.2s cubic-bezier(0.4, 2, 0.6, 1);
+}
+
+.navbar-link:hover,
+.navbar-link:focus {
+    color: #00c6ff;
+    transform: scale(1.25) !important;
+    z-index: 1;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 16px rgba(44,83,100,0.15);
+    margin-bottom: 1rem;
+}
+
+.floating-logo {
+    position: absolute;
+    font-size: 3rem;
+    opacity: 0.18;
+    z-index: 0;
+    pointer-events: none;
+    animation: floatLogo 8s ease-in-out infinite;
+}
+
+.html-logo {
+    color: #e44d26;
+    top: 10%;
+    left: 8%;
+    animation-delay: 0s;
+}
+.css-logo {
+    color: #2965f1;
+    top: 60%;
+    left: 15%;
+    animation-delay: 1.5s;
+}
+.js-logo {
+    color: #f7df1e;
+    top: 30%;
+    left: 80%;
+    animation-delay: 3s;
+}
+.python-logo {
+    color: #306998;
+    top: 75%;
+    left: 70%;
+    animation-delay: 2s;
+}
+.cpp-logo {
+    color: #00599c;
+    font-family: 'Roboto', monospace, sans-serif;
+    font-weight: bold;
+    top: 50%;
+    left: 50%;
+    font-size: 2.5rem;
+    animation-delay: 4s;
+}
+
+@keyframes floatLogo {
+    0%   { transform: translateY(0) scale(1) rotate(0deg);}
+    50%  { transform: translateY(-30px) scale(1.1) rotate(8deg);}
+    100% { transform: translateY(0) scale(1) rotate(0deg);}
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.profile-floating-logos {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.profile-logo {
+    position: absolute;
+    font-size: 2.2rem;
+    opacity: 0.45;
+    animation: profileFloat 4s ease-in-out infinite alternate;
+    pointer-events: none;
+}
+
+.profile-logo.html {
+    color: #e44d26;
+    left: 10%;
+    top: 18%;
+    animation-delay: 0s;
+}
+.profile-logo.css {
+    color: #2965f1;
+    left: 70%;
+    top: 30%;
+    animation-delay: 0.7s;
+}
+.profile-logo.js {
+    color: #f7df1e;
+    left: 25%;
+    top: 65%;
+    animation-delay: 1.4s;
+}
+.profile-logo.python {
+    color: #306998;
+    left: 60%;
+    top: 75%;
+    animation-delay: 2.1s;
+}
+.profile-logo.cpp {
+    color: #00599c;
+    font-family: 'Roboto', monospace, sans-serif;
+    font-weight: bold;
+    left: 80%;
+    top: 55%;
+    font-size: 1.8rem;
+    animation-delay: 2.8s;
+}
+
+@keyframes profileFloat {
+    0%   { transform: translateY(0) scale(1);}
+    100% { transform: translateY(-18px) scale(1.13);}
+}
+
+.hero-actions {
+    margin: 1.2rem 0 0.7rem 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.hero-btn {
+    background: #2c5364;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(44,83,100,0.08);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background: #00c6ff;
+    color: #22223b;
+    transform: scale(1.08);
+}
+
+.tech-fact-box {
+    background: rgba(255,255,255,0.85);
+    color: #22223b;
+    border-radius: 12px;
+    padding: 0.7rem 1.2rem;
+    margin: 0.5rem auto 0 auto;
+    max-width: 350px;
+    box-shadow: 0 2px 8px rgba(44,83,100,0.10);
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+}
+
+.fact-btn {
+    margin-top: 0.5rem;
+    background: #4ea8de;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 0.3rem 1rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.fact-btn:hover,
+.fact-btn:focus {
+    background: #2c5364;
+    color: #fff;
+    transform: scale(1.07);
+}
+
+.skills-section {
+    max-width: 700px;
+    margin: 2.5rem auto 2rem auto;
+    padding: 2rem;
+    background: rgba(255,255,255,0.92);
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(44,83,100,0.08);
+}
+
+.skills-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c5364;
+    letter-spacing: 1px;
+}
+
+.skill {
+    margin-bottom: 1.2rem;
+}
+
+.skill-name {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #22223b;
+}
+
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 12px;
+    height: 18px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(44,83,100,0.07);
+    margin-bottom: 0.2rem;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #00c6ff 0%, #2c5364 100%);
+    border-radius: 12px 0 0 12px;
+    transition: width 1s cubic-bezier(0.4, 2, 0.6, 1);
+}
+
+/* Custom details/summary dropdown */
+details {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    background: #f7fafd;
+    box-shadow: 0 1px 4px rgba(44,83,100,0.07);
+    padding: 0.5rem 1rem;
+    border: 1px solid #e0e0e0;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1rem;
+    outline: none;
+    position: relative;
+    padding-left: 1.5em;
+    color: #2c5364;
+    transition: color 0.2s;
+}
+
+summary:hover {
+    color: #00c6ff;
+}
+
+/* Hide default arrow and custom arrow for details/summary */
+summary::-webkit-details-marker {
+    display: none;
+}
+summary::marker {
+    display: none;
+}
+summary::before {
+    display: none;
+}

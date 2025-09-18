@@ -1,0 +1,13 @@
+/* Custom styles for your site */
+/* Add any custom CSS here that is not in indexstyle.css or style.css */
+
+.animated-bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+/* Add more custom styles as needed */
